@@ -1,0 +1,9 @@
+p{
+    color:green;
+    background-color: yellow;
+}
+/* we have to link the 2 doctuments 
+to make the css styling in html document 
+for this we use link tag in head tag . this 
+will be in html document*/
+

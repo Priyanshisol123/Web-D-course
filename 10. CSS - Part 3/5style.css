@@ -1,0 +1,92 @@
+h1{
+    border: 2px solid black;
+    width: 33.33%;
+    /* Based on relation to parent that is body */
+}
+#a{
+    border: 2px solid black;
+    background-color: brown;
+    width: 500px;
+    height: 150px;
+}
+h3{
+    border: 2px solid black;
+    background-color: aqua;
+    width: 50%;
+    /* Here parent class is div that is 500px
+    therefore the child class h3 gives 50% of 500px
+    in relation to div for the width of h3*/
+}
+#outer2{
+    border: 2px black solid;
+    background-color: blueviolet;
+    height: 300px;
+    width: 300px;
+    margin: 50px; /*From all sides*/
+}
+#inner2{
+    border: 2px black solid;
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    /* MUjhe margin set karni hai but outer div ki height 
+    ke respect mein */
+    margin-left: 10%;
+    /* 10 % of 400=40 so the margin is 40 */
+    /* take relation to the size of the parent box and 
+    not the size of msrgin of the parent */
+}
+#outer{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: pink;
+    font-size: 10px;
+    padding: 1em;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background: blue;
+    font-size: 3em;
+    /* 0.5em=half or 2em=2 times of font size of parent  */
+    padding: 1em;
+    /* padding = font size of thi element only */
+}
+button{
+    font-size: 50px;
+    border-radius: 15px;
+    border: 5px solid green;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* we use em here as in future if the button size
+     is changed then it will be difficult to change 
+     all the other attributes about it like padding 
+     left or right so we use em which is relative to 
+     the size of the button so that if the button 
+     size change then the space or padding will be 
+     according to the button and not a fixed size */
+}
+section{
+    font-size: 1em;
+}
+div{
+    /* font-size:2em; */
+
+    /* Here the size of each nested div keeps increasing
+    as if the top give gets 10 px then next child div
+    will get 20 px and the next chlid after will get 40 px
+    then the next child after that will be getting
+    80px . every child dive is 2 times its parent class 
+   This is snowball effect . 
+   We wanted the size of all div relatuve to the section
+   element but it caused issues and we did not get 
+   the wanetd result */
+   /* We wanted all divs to be 30px but they took 2em of 
+   each other as div parent is div only hence this.*/
+   /* Therefore to solve the issue we use rem which
+   take parent of all the dive in nested for example
+   section element in this case */
+
+   font-size: 2rem;
+}

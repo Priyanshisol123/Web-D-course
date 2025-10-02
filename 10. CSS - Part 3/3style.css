@@ -1,0 +1,26 @@
+/* DIsplay */
+.a{/* h2 */
+    display: inline;
+    background-color: pink;
+}
+.b{/* span */
+    display: block;
+    background-color: yellowgreen;
+}
+/* New thing */
+.c{  /* span */
+    /* background-color: pink; */
+    /* if bg collor revome we se the box on the word 
+    around and no effect to any words except the left 
+    and  righ to the set width */
+    border: 2px solid black;
+    height: 100px;
+    /* no change browser ignore it /except the words 
+    on same line left and right*/
+    padding: 50px;
+    /* merges with the content around it only affect 
+    content on same line left and right*/
+    margin:10px;
+    /* only affects the words on the same line left 
+    and right out of box */
+}

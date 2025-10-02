@@ -1,0 +1,25 @@
+h1{
+    color:olive
+}
+h2{
+    color: hsl(180, 100%, 50%);
+}
+h3{
+    color: rgb(150, 37, 206);
+}
+h4{
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+    /* (red,green,blue) */
+    /* YOu csn use color picker (google search)to 
+    pick to appropriate color that looks good */
+}
+p{
+    color: hwb(300 0% 0%);
+}
+/* Hex codes or hexadecimal color system*/
+h5{
+    color: #8b0c0c;
+    background-color: #0f0;
+    /*  00 ff 00  */
+}

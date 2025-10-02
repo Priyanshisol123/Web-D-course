@@ -1,0 +1,11 @@
+h1{
+    color:blue;
+}
+/* Color is applied to all */
+p{
+    color: red;
+}
+button{
+    color: lightseagreen;
+}
+/* color usually by default apply to foreground */

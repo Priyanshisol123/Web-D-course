@@ -1,0 +1,68 @@
+div{
+    /*   Height */
+    height: 200px;
+    /*   Blue area is the content area of div when we do inspect */
+    /*   if there is no content then height is 0 */
+    /*   Width */
+    width: 300px;
+    /*   this tell how long will the line go and when the content 
+        go to next line */
+    /*   Blue area is the content area of div when we do inspect */
+    background-color: pink;
+    /*   Shows(colors) the size of content area */
+    /*   border */
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    /*   border short hand: width /style/color all together */
+    border:5px solid blue;
+    /*   border sides */
+    border-left-color: brown;
+    border-left-style: dashed;
+    border-right-width: 10px;
+    border-right: none;
+    border-top-color: rgba(79, 223, 35, 0.864);
+    /*   Border radius makes the corner rounder */
+    /*border-radius: 50px; */
+    /*   50% in bornder radius makes it complete circle or oval . 
+    if height = width then circle else oval*/
+    border-top-right-radius: 50px;
+    /* height: 230px;
+    width: 230px; */
+    /*   new  border radius shape*/
+    /* border-radius: 10% / 50%; */
+    /* border-radius: 25% 10%; */
+    /* border-radius: 10% 30% 50% 70%; */
+    /* padding property: gives spaces to the inner walls of 
+    the element (green area)*/
+    padding-left: 18px;
+    padding-right: 15px;
+    padding-top: 18px;
+    /* padding short Hand */
+    padding: 18px 15px 0 18px;
+    /* margin property: gives spaces to just outside walls of 
+    the element border (peachish orange area) */
+    margin-bottom: 50px;
+    /* margin short hand */
+    margin: 25px 60px;
+}
+h1{
+    border-width: 2px;
+    border-style: dashed;
+    border-color: purple;
+    /* 50% in bornder radius makes it complete circle or oval */
+    border-radius: 50%;
+    padding: 5%;
+    text-align:center;
+    /* Automatically given a margin by default */
+    margin: 0;
+}
+button{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: aqua;
+    padding: 10px 25px;
+    margin-left: 50px;
+}

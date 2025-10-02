@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS (Inline Style)</title>
+    <!-- Linking css file to html document -->
+    <link rel="stylesheet" href="01style.css">
+    <!-- Style Tag: Second way to implement Css -->
+    <style>
+        h1{
+            color:blueviolet;
+            background-color: black;
+        }
+    </style>
+</head>
+<!-- inline > style tag > External style sheet (priority when all are in the same document) -->
+<body>
+    
+    <!-- Inline Style: Basic(1st) way to implement CSS-->
+    <h1 style="color:rgb(196, 46, 0)">Apna College</h1>
+    <p style="color:pink;background-color: blue;">This is a paragraph.</p>
+    <button style="color:blue;background-color: orange;">Help</button>
+    <h1 style="color:rgb(196, 46, 0)">Priyanshi</h1>
+    <h1 style="color:rgb(196, 46, 0)">Hello</h1>
+    <!-- if we have to creat some h1 tag with similar style that 
+     will take a lot of time, we use inline element to do this 
+     but we have to copy paste it every time in order notto waste 
+     time we do not use inline elements in large scale but only 
+     for small projects -->
+
+
+    <!-- Style Tag: Second way to implement Css -->
+    <!-- Here we dont have to apply inline style again and 
+       again but we can just add same style to all the same 
+       tags together in *"head" tag*.-->
+    <h1>Apna College</h1> 
+    <h1>Priyanshi</h1>
+    <h1>Hello</h1>
+    <!-- The problem with this way of implementing CSS is that
+     it apply styling to only this file/ document only, Thus 
+     this way is also not used in practical cases.-->
+
+
+     <!-- External Style sheet: Third way to implement Css that we will 
+      aways use from now on  -->
+      <!-- creatin a seperate file and using it and writing the style 
+       tag content only in that css file -->
+
+       <p>External Style sheet: after linking with css file</p>
+
+
+</body>
+
+</html>

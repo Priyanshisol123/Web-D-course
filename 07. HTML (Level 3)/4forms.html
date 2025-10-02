@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms elements and attributes
+
+    </title>
+</head>
+
+<body>
+    <form action="/server">
+        <!--form content-->
+        <div>
+            Random
+            <input><!--input element create a box to type any data-->
+            <br>
+            Username
+            <input type="text"><!--there are many type attribute (text,passworn,number,time,color etc)-->
+            <br>
+            Password
+            <input type="password" placeholder="Enter Password"><!-- Placeholder Attribute -->
+            <br>
+            Age(number)
+            <input type="number">
+            <br>
+            Time
+            <input type="time">
+            <br>
+            Colour
+            <input type="color">
+        </div>
+        <hr>
+        <!-- Label tag -->
+        <div>
+            <label>
+                Username:<!--Whenever we click on the label then the box below is select to type in-->
+                <input type="text" placeholder="Enter Username">
+            </label>
+            <label>
+                Password:
+                <input type="password" placeholder="Enter Password">
+            </label>
+        </div>
+        <hr>
+        <!-- for id in Label classical approach -->
+        <div><!--gets the section to a diffrent line-->
+            <label for="username">Enter Your Username:</label>
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        <div>
+            <label for="password">Enter Your password:</label>
+            <input type="password" id="password" placeholder="password">
+        </div>
+        <div>
+            <label for="age">Enter Your Age:</label>
+            <input type="number" id="age" placeholder="age">
+        </div>
+        <hr>
+        <!-- Button Element -->
+        <div>
+            <button>Submit</button>
+            <br>
+            <!-- Types of button 3 -->
+            <button type="submit">submit</button>
+            <button type="button">button</button>
+            <button type="reset">reset</button>
+        </div>
+        <hr>
+        <div>
+            <!-- Button using Input element type-->
+            <input type="button">
+            <input type="button" value="click me">
+            <input type="submit">
+        </div>
+        <hr>
+        <div>
+            <!-- Name attribute in input--><!--this is unsafe so in js we wil see how
+                to remove this info (sensitive) from url-->
+            <!-- this take the name and send the data in name=value pair this can be 
+                seen in url-->
+            <!-- here we give a name to the value that we want to see after getting 
+                submitted.we use it cuz we want the data to be accessed in the backend
+                so we use name attribute-->
+            <label for="username">Username:</lebel>
+            <input type="text" placeholder="Enter Username" id="username" name="user">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter Password" id="password" name="pass">
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" placeholder="Enter age" id="age">
+            <br>
+            <button type="submit">submit</button>
+        </div>
+
+    </form>
+    <hr>
+    <form action="https://www.google.com/search?q=apple&sca_esv=1e35dc1f4110e681&sxsrf=AHTn8zq81ubN_UyZk86v7PwfpQqZsBu3yg%3A1738639705759&source=hp&ei=WYmhZ5WxLNzuseMPoI6F-Aw&iflsig=ACkRmUkAAAAAZ6GXaWrb6QuNnRLwaZ2Uk5zoDwbnBKLm&ved=0ahUKEwjVwbXQiamLAxVcd2wGHSBHAc8Q4dUDCBA&uact=5&oq=apple&gs_lp=Egdnd3Mtd2l6IgVhcHBsZTIOEC4YgAQYsQMY0QMYxwEyBRAAGIAEMgsQLhiABBixAxjlBDILEC4YgAQYsQMY5QQyBRAAGIAEMggQABiABBixAzIFEAAYgAQyCBAuGIAEGLEDMggQABiABBixAzILEAAYgAQYsQMYgwFIsxFQxAVYlAxwAXgAkAEAmAHTAqABhAqqAQcwLjEuMy4xuAEDyAEA-AEBmAIGoAK3CqgCCsICBxAjGCcY6gLCAgoQIxiABBgnGIoFwgIEECMYJ8ICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYsQMYgwEYigXCAhQQLhiABBixAxjRAxiDARjUAhjHAZgDEfEFbbDvPvh-nciSBwcxLjAuMy4yoAfdOQ&sclient=gws-wiz">
+        <input type="text" placeholder="Search in google" name="q"><!--here q="" show the 
+        search value we enter so name take the value and it searches on the google-->
+        <button>search</button>
+    </form>
+
+    <hr>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="Search in google" name="q"><!--input bax ka data 
+        google ke main search url ke baad '?' lagta hai uske baad data likh deta hai jisse 
+        search ho jata hai-->
+        <button>search</button>
+    </form>
+    <!-- out of form so does nothing-->
+    <hr>
+    <button>hello</button>
+    <hr>
+
+</body>
+
+</html>

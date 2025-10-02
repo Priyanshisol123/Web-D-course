@@ -1,0 +1,16 @@
+div{
+    height: 200px;
+    width: 200px;
+    /* alpha value */
+    background-color: rgba(77, 168, 20, 0.3);
+    background-color: #9f00004d;
+    /* hexcode */
+    /* Hello is completly visible */
+}
+#Opacity{
+    background-color: rgb(251, 74, 10);
+    /* Opacity */
+    /* Font opacity or everything is the elemnt will 
+    be affectedby change is opacity */
+    opacity: 0.5;
+}

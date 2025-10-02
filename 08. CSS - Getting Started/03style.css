@@ -1,0 +1,16 @@
+h1{
+    color: white;
+    background-color: black;
+}
+p{
+    color: red;
+    background-color: cornsilk;
+}
+button{
+    color: gold;
+    background: black;
+}
+/* background property can be used to do many things
+like setting image,color etc but background-color can only 
+set the color of the background. We usually use 
+background-color property in maximum cases */

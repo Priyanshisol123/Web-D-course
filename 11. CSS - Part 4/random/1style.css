@@ -1,0 +1,71 @@
+h1{
+    color: red;
+    text-decoration: double underline;
+    font-size: 100px;
+    border: 10px solid ;
+    padding: 10px;
+    margin:10px;
+    margin-left: 1%;
+    width: 650px;
+}
+h2{
+    color: rebeccapurple;
+    text-decoration: double underline;
+    font-size: 80px;
+    border: 10px solid ;
+    padding: 10px;
+    margin:10px;
+    margin-left: 10%;
+    width: 520px;
+}
+h3{
+    color: green;
+    text-decoration: double underline;
+    font-size: 60px;
+    border: 10px solid ;
+    padding: 10px;
+    margin:10px;
+    margin-left: 19%;
+    width:390px;
+}
+h4{
+    color: blue;
+    text-decoration: double underline;
+    font-size:45px;
+    border: 10px solid ;
+    padding: 10px;
+    margin:10px;
+    margin-left: 25%;
+    width: 300px;
+}
+h5{
+    color: rgb(2, 121, 161);    
+    text-decoration: double underline;
+    font-size: 30px;
+    border:10px solid ;
+    padding: 10px;
+    margin:10px;
+    margin-left: 32%;
+    width: 200px;
+}
+h6{
+    color: rgb(255, 0, 191);
+    text-decoration: double underline;
+    font-size: 20px;
+    border: 10px solid ;
+    padding: 10px;
+    margin:10px;
+    width:130px;
+    margin-left: 37%;
+}
+body{
+    background-color: pink;
+    text-decoration: double underline;
+    border: black 10px solid ;
+    padding: 10px;
+    margin:10px;
+    width:700px;
+}
+*{
+    text-align: center;
+}

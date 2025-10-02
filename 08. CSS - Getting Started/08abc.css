@@ -1,0 +1,50 @@
+p{
+    /* q2 */
+    color: #964b00;
+    
+    /* q3 */
+    text-align: center;
+
+    /* q4 */
+    color: red;
+
+    /* q9 */
+    line-height: 30px;
+
+}
+h1{
+    /* q3 */
+    text-align: center;
+
+    /* q4 */
+    color: black;
+}
+h3{
+    /* q3 */
+    text-align: center;
+}
+h4{
+    /* q3 */
+    text-align: center;
+}
+body{
+    /* q5 */
+    font-family: Georgia;
+}
+a{
+    /* q6 */
+    color: green;
+    text-decoration: none;
+}
+button{
+    /* q7 */
+    background-color: white;
+    color: blueviolet;
+}
+textarea{
+    /* q7 */
+    color: black;
+}
+span{
+    text-decoration: underline;
+}

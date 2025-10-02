@@ -1,0 +1,15 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: black solid 2px;
+    margin: 5px;
+    /* display: inline; */
+    display: inline-block;
+    /* Styling remian in inline */
+    /* Behave like or looks the same as in block but 1 after other */
+}
+#third{
+    display: none;
+    /* here gayab ho jayega woh element */
+}

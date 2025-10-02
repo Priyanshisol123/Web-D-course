@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table, semantics in table(thead,tbody,tfoot)</title>
+</head>
+
+<body>
+    <!-- Table in HTML -->
+    <Table border="black"> <!--this border is css part so it is not appropriate to use in html-->
+        <caption><u>Food Menu</u></caption>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Frooti</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Chips</td>
+            <td>20</td>
+        </tr>
+    </Table>
+
+    <!-- Semantics in table(thead,tbody,tfoot) -->
+    <Table border="black"> <!--this border is css part so it is not appropriate to use in html-->
+        <caption><u>Food Menu</u></caption>
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <!-- Table body -->
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <!-- Table Footer -->
+        <tfoot>
+            <!-- usually in sum like row -->
+            <tr>
+                <td>Sum</td>
+                <td>42</td>
+            </tr>
+        </tfoot>
+    </Table>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms2</title>
+</head>
+
+<body>
+
+    <!-- Input Element type(attribute) checkbox. 
+     Name attributeis  same so it grouped the given input, we can select 
+     multiple option in the group. Whereas if we change the name attribute 
+     than we can choose multple input in that name atribute grp-->
+    <form action="/server">
+        <br>
+        <div>
+            <input type="checkbox" name="age" id="age" checked>
+            <!--"checked" is also an attribute-->
+            <label for="age">i am 18+</label>
+            <!-- if we submit when checked then the url shows "on" in it
+        "file:///D:/server?age=on" 
+        and if we un check then it desnt show anything on url-->
+        </div>
+        <div>
+            <!-- value when put then we dont see name='on' but we see name=value -->
+            <b>Choose similar options: </b>
+            <input type="checkbox" name="sub" id="Maths" value="Math">
+            <label for="Maths">Maths</label>
+            <input type="checkbox" name="sub" id="English" value="Eng">
+            <label for="English">English</label>
+            <input type="checkbox" name="sub" id="apple" value="apple">
+            <label for="apple">Apple</label>
+            <input type="checkbox" name="sub" id="CS" value="CS">
+            <label for="CS">CS</label>
+        </div>
+        <hr>
+        <!-- The Input Element type(attribute) Radio button.
+         Name attributeis  same so it grouped the given input, we can only 
+         select one in the group. Whereas if we change the name attribute 
+          than we can choose one input in that name atribute grp-->
+        <div>
+            <b>Choose a fruit:</b>
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="manga" value="mango">
+            <label for="manga">Mango</label>
+            <input type="radio" name="fruit" id="cherry" value="cherry">
+            <label for="cherry">cherry</label>
+        </div>
+        <div>
+            <b>Choose one sibling from Ducktales:</b>
+            <input type="radio" name="siblings" id="apple" value="Huey">
+            <label for="apple">Huey</label>
+            <input type="radio" name="siblings" id="manga" value="Duey">
+            <label for="manga">Dewey</label>
+            <input type="radio" name="siblings" id="cherry" value="Louie">
+            <label for="cherry">Louie</label>
+        </div>
+        <Hr>
+        <!-- Drop down Select a option 
+        Html mein drop downs for select ke form mein create karte hain-->
+        <div>
+            Choose your profession:
+            <select name="profession" id="profession"><!--name=value pair-->
+                <option>Select your option:</option>
+                <option value="stu">Student</option>
+                <option value="Ani">Animator</option>
+                <option value="dev">Developer</option>
+                <option value="Tea">Teacher</option>
+            </select>
+        </div>
+        <!-- Input Element Range  -->
+        <HR>
+        <div>
+            <label for="vol">Select your voulume level: </label>
+            <input type="range" min="0" max="100" name="vol" id="vol">
+            <input type="range" min="0" max="100" name="vol" id="vol" step="10">
+            <input type="range" min="0" max="100" name="vol" id="vol" step="10" value="70">
+        </div>
+        <!-- Text Area -->
+        <hr>
+        <div>
+            <label for="fb">Please provide your feedback:</label>
+            <textarea id="fb" Name="hi"></textarea>
+            <textarea id="fb" Name="hi" placeholder="Write your feedbackhere:"></textarea>
+            <textarea id="fb" Name="hi" rows="5"></textarea>
+            <textarea id="fb" Name="hi" rows="5" cols="60"></textarea>
+            <!-- When we used name it sent the feedback to url backend -->
+        </div>
+        <hr>
+        <button>submit</button>
+        <hr>
+    </form>
+
+</body>
+
+</html>

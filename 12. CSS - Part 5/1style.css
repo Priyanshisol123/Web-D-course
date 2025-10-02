@@ -1,0 +1,43 @@
+#container{
+    height: 300px;
+    width: 80%;
+    /* 80% of screen */
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    /* hame output esa chahiye ki container ke andar hi sara color div ho bahar acche nai lagre */
+    display: flex;
+    /* sare color wale div adjust ho gaye */
+    /* flex box element jispe lagaya hai woh limit, contain, restrict kar deta hai as a parent
+     element ki uske andar jo bhi element hain woh uske bahar nahi jayenge , woh elemnt blexible 
+     ho jayenge and uske (parent element jispe property hai) uske andar hi rahenge*/
+
+     /* Abhi sare fex items row(horizontal) ki form mein hain 
+     here height is same no change but width change*/
+     flex-direction: column;
+     /* flex-direction: row; */
+     /* ab saare flexitems column(vertical) ke form mein aa gaye ek ke niche ek 
+     here width is same no change but height is changed*/
+
+     /* in general the default or set height and width of the item will be ignored and
+     all the items will be contained in the flexbox bepending upon flex properties
+     kya set ki gayi hai*/
+
+     /* flex direction */
+     /* flex-direction: row-reverse; */
+     flex-direction: column-reverse;
+     /* red se violet hoga ab */
+     /* right to left / bottom to top */
+}
+h1{
+    text-align: center;
+}
+#container div{
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+

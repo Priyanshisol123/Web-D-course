@@ -1,0 +1,36 @@
+#container{
+    height: 600px;
+    width: 80%;
+    /* 80% of screen */
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    /* flex-wrap: wrap; */
+    /* align-items: baseline; */
+    align-content: flex-start;
+}
+#org{
+    align-self: flex-start;
+    flex: 2 2 100px;  
+     /*flex:ngrow shrink basis  */
+    /* font size nikalne par */
+    /* font ki wajha se org ki width jyada hogi grow same blue ke sath 
+    blu<org width cuz of font size and shrink when overflow grow when 
+    underflow this is how itll work */
+}
+#blue{
+    flex-grow: 2;
+}
+h1{
+    text-align: center;
+}
+#container div{
+    height: 100px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

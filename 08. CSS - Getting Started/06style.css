@@ -1,0 +1,59 @@
+h1{
+    /* Text align property */
+    text-align: end;
+    /* According to parent element */
+    border: solid;
+    /* border show how big is the heading */
+    width: 60%;
+    /* We changed the width or size of the heading*/
+    /* Here we can see that alignment is according to the size of 
+    heading. when we changed the with to 50(60 her) or half then 
+    we see the boder shows half area and the alignment is done 
+    according to the area size within the bordered area */
+    
+}
+p{
+    text-align: justify;
+    font-weight: 400;
+    text-decoration: red dotted underline; /* text decoration with color */
+    /* we can also put in place of red/wavy/dotted. */
+    line-height: 2;
+    letter-spacing: 2.5px;
+    font-size: 10px;
+    font-family: arial;
+}
+h2{
+    /* Font weight */
+    font-weight: 800;
+}
+h3{
+    /* Text decoration , its color and style can be set too*/
+    text-decoration: double goldenrod line-through;
+    /* skipping "double" and color also works */
+}
+a{
+    /* remove underline of anchore tag */
+    text-decoration: none;
+    /* When we write none all the default styles like underline,
+    overline etc will be removed */
+}
+h4{
+    /* Line height or line spacing */
+    line-height: 6;
+    /* Very wide space between lines and 2.5 means 
+    2.5 time of normal height */
+}
+h5{
+    /* Letter-spacig or character spacing */
+    letter-spacing: 20px;
+    /* px = pixels(unit of measurment) */
+}
+h6{
+    /* Font size units absolute */
+    font-size: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+div{
+    /* font family */
+    font-family: papyrus,fantasy;
+}

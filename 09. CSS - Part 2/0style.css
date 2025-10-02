@@ -1,0 +1,161 @@
+/* Universal selector */
+*{
+    font-family: 'Courier New';
+    background-color: white;
+    /* This will give background color to every 
+    element in the document even button will have 
+    background white/the color we write */
+}
+/* ELement Selector */
+/*
+h3{
+   color: purple; 
+} 
+ */
+h1,h3{
+    /* In Here if we write multiple elemnts 
+    seperated by , then we can assign same  or
+     assign properties at the same time */
+    color: #b92b27;
+}
+/* Id selector */
+#login{
+    background-color: #fff;
+}
+#signup{
+    background-color: #b92b27;
+    color: #fff;
+}
+/* Class selector */
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+/* Descendent selector */
+p a{
+    color: #fff;
+    background-color: black;
+}
+/* One way is also that we can give class to 
+the parent tag . as there are a tag under p tag
+multiple times so as to not arouse confusion and
+to give diffrent prop to both a tag we give class
+to p tag
+descendent selector of class to element*/
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+/* We can also do descendent selector on multiple levels 
+Here we do not need all descendent 2 is enough as it is 
+okay to choose all or any child class and not only the 
+direct child*/
+nav li,nav ul li a{
+    color: hotpink;
+}
+/* Adjacent Sibling Combinator */
+p+h3{
+    text-decoration: underline;
+}
+/* We can also use class instead of elements in 
+an adjacent sibling combinator  */
+.upvote+button{
+    color: darkblue;
+    background-color: cornflowerblue;
+}
+/* Child COmbinator: here > is child selector
+Only direct child allowed*/
+div>input{
+    background-color: darksalmon;
+}
+/* Attribute Selector */
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color: green;
+}
+/* This also works. Attribute has many syntax see MDN*/
+input[type]{
+    background-color: #fff;
+}
+/* Pseudo class :hover */
+button:hover{
+    background-color: black;
+    color: white;
+}
+/* Specificity is the reason we cannot change the 
+background color of the login button and there is not
+change or not effect to sign in button .
+This is because specificity decides to which CSS to 
+give priority and which css not to give priority*/
+/* login and signup is not affected as they are 
+implemented using ID which has more priority*/
+h3:hover{
+    text-decoration: line-through;
+}
+/* Pseudo class :active (click)*/
+button:active{
+    color: black;
+    background-color: hotpink;
+}
+p:active{
+    font-weight: bold;
+    color: green;
+}
+/* Pseudo class :checked (Permanent after selecting)*/
+Input[type="radio"]:checked+label{
+    font-weight: bold;
+    color: red;
+}
+
+/* 
+Input[type="radio"]:checked+#Yes{
+    font-weight: bold;
+    color: green;
+}
+Input[type="radio"]:checked+#No{
+    font-weight: bold;
+    color: red;
+} 
+*/
+Input[type="checkbox"]:checked+label{
+    font-weight: bold;
+    color: green;
+}
+/* Pseudo class :nth-of-type(the nth element will have 
+the following property implemented)*/
+/* div:nth-of-type(2n){
+    background-color: blanchedalmond;
+} */
+#c:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+div #a:nth-of-type(n){
+    background-color: blanchedalmond;
+}
+div #b:nth-of-type(n){
+    background-color: blanchedalmond;
+}
+div #d:nth-of-type(n){
+    background-color: blanchedalmond;
+}
+/* Pseudo element: Selects a specific area of a particular element */
+h1::first-letter{
+    color: green;
+}
+main>p::first-line{
+    color: purple;
+    font-weight: bold;
+}
+p::selection{
+    color: black;
+    background-color: yellow;
+    font-weight: bold;
+}
+h1{
+    background-color: black !important;
+    /* Here as we put !important this holds more
+     priority than even inline style */
+    color: white;
+}

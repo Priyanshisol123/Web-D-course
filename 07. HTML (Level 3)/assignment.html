@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <div>
+        Q1
+        <table border="black">
+            <caption>Student Information</caption>
+            <tr>
+                <th rowspan="6">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>House</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Dehli</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+    <div>
+        Q2
+        <form action="/action">
+            <div>
+                <label for="name">Name:</label>
+                <Input type=text id="name" name="name">
+            </div>
+            <div>
+                <label for="Sex">Sex:</label>
+                <input type="radio" id="Male" name="gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="gender" value="Female">
+                <label for="Female">Female</label>
+            </div>
+            <div>
+                <label for="Country">Country:</label>
+                <select name="Country" id="Country">
+                    <option>Select an option</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Message:</label><br>
+                <textarea name="msg" id="msg" rows="4" cols="35"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="Subscribe" name="Subscribe?">
+                <lable for="Subscribe">Subscribe?</lable>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <hr>
+    </div>
+    <div>
+        Q3
+        <h2>Feedback Form</h2>
+        <form action="/action">
+            <div>
+                <label for="name">Name:</label>
+                <Input type="text" id="name" name="name" placeholder="Write your name">
+            </div>
+            <div>
+                <label for="email">Name:</label>
+                <Input type="text" id="email" name="email" placeholder="Write your email">
+            </div>
+            <div>
+                <label for="msg">Message:</label><br>
+                <textarea name="msg" id="msg" rows="4" cols="35"></textarea>
+            </div>
+            <div>
+                <label for="rating">Rate us out of 5:</label>
+                <br>
+                <input type="radio" id="1" name="rating" value="1">
+                <label for="1">1</label>
+                <br>
+                <input type="radio" id="2" name="rating" value="2">
+                <label for="2">2</label>
+                <br>
+                <input type="radio" id="3" name="rating" value="3">
+                <label for="3">3</label>
+                <br>
+                <input type="radio" id="4" name="rating" value="4">
+                <label for="4">4</label>
+                <br>
+                <input type="radio" id="5" name="rating" value="5">
+                <label for="5">5</label>
+                <br>
+            </div>
+            <button type="=submit">Send your message!</button>
+        </form>
+    </div>
+</body>
+
+</html>

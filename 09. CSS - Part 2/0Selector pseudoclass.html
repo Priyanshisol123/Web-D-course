@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slector(Universal,Element,Id,Class,Attribute) and combinator(Adjacent sibling,Child) and psuedo class and element</title>
+    <link rel="stylesheet" href="0style.css">
+</head>
+
+<body>
+    <!-- Universal selector: This to select evrything in a document -->
+    <header>
+        <h1 style="background-color: yellow;">Priyanshi Solanki</h1>
+        <!-- ELement selector:Selects all elements of same type  -->
+<!-- Pseudo ELement :Selects a specific area of any particular element
+  ::first-line, ::first-letter, selection -->
+        <h1>Quora</h1>
+        <!-- ID Slector: Selects an element based on th value of the 
+             element's id attribute -->
+        <button id="login">Log in</button>
+        <button id="signup">Sign up</button>
+
+
+        <div>
+            <!-- Child Combinator: Selects the element which are only direct child . 
+        it doesn't work for child of child -->
+            <input type="text" placeholder="username">
+            <!-- Attribute Selector:Slects elemnets based on the presence or
+            value of agiven attribute -->
+            <input type="password" placeholder="password">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <!-- Descendent selector  -->
+        <!-- selects all a tag under p tag and to give
+        prop to all the a tag ner p tag only and a tag 
+        under nav still the same not affected*-->
+        <div  id="c">
+            <p class="post">
+                <!-- as it has post in it -->
+                Adam &nbsp;&nbsp;
+                <a class="follow" href="/adam">Follow /abc</a></span>
+            </p>
+            <!-- Adjacent sibling combinator: select the 2nd element which are present
+        right after the first element in a html code file. for ex h3 is after p tag 
+        is only selected and other h3 will not be selected in css to assign property -->
+            <h3 >What is the highest salary for a spacex engineer?</h3>
+            <span >
+                <!-- Class selector:Selects an element based on their class attribute  -->
+                <button class="upvote">+upvote</button>
+                <button>answer</button>
+            </span>
+            <hr />
+        </div>
+        <div  id="c">
+            <p class="post" id="a">
+                Bob &nbsp;&nbsp;
+                <a class="follow" href="/bob">Follow xyz</a>
+            </p>
+            <h3 id="b">What is the syllabus for JEE 2024?</h3>
+            <span id="d">
+                <button class="upvote">+upvote</button>
+                <button>answer</button>
+            </span>
+            <hr />
+        </div>
+
+        <div id="c">
+            <p class="post" >
+                Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="follow" href="/catlyn">Follow pqr</a>
+            </p class="post">
+            <h3 >Why is the sky blue?</h3>
+            <span >
+                <button class="upvote">+upvote</button>
+                <button>answer</button>
+            </span>
+            <hr />
+        </div>
+        <div id="c">
+            <p class="post" id="a">
+                Dan &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="follow" href="/dan">Follow pqr</a>
+            </p>
+            <h3 id="b">Why is the sky blue?</h3>
+            <span id="d">
+                <button class="upvote">+upvote</button>
+                <button>answer</button>
+            </span>
+            <hr />
+        </div>
+        <!-- this is also a tag under p tag -->
+        <p>This is the end of my website. Know more
+            about on <a href="google.com">google</a>
+        </p>
+        <p>Hi there me today is wednesday and tommorow i have a day 
+            off. I am quite late for my percentage of course completion 
+            of Ac so today i have decided to keep awake and do as much 
+            as possible. Thanku for your patience. &hearts;</p>
+        <!-- Pseudo class: :hover,:active, :checked, 
+        :nth-of-type (more psuedo class on MDN)-->
+        <!-- A key word added to a selector that 
+        specifies a special state of the selected 
+        element. That is,when we want some things that 
+        should happen while we scroll th webpage like 
+        when we click the color should change or when 
+        we make a choice then color should be show 
+        diffrent for each choice as we select it-->
+        <div>
+            <input type="radio" id="Yes" name="agreement" value="Yes">
+            <label for="Yes" Id=Yes>Yess</label>
+            <input type="radio" id="No" name="agreement" value="No">
+            <label for="No" id="No">Noo</label>
+        </div>
+        <div>
+            <input type="checkbox" id="HTML" name="Language" value="HTML">
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="CSS" name="Language" value="CSS">
+            <label for="CSS">CSS</label>
+        </div>
+    </main>
+</body>
+
+</html>

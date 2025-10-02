@@ -1,0 +1,36 @@
+#a{  /* Initial state */
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    margin: 0 auto; /* center */
+    margin-top: 10px;
+    transition:1s;
+    /* 1 second duration*/
+    transition-duration:2s; /*   Same   */
+    transition-delay: 0.5s;
+    transition-timing-function: steps(5);/* transition in 5 steps */
+    /* transition is short hand where there are 4 properties */
+    /* property name | duration | timing-function | delay */
+    /* Shorthand=> transition: margin-top 2s eas-in-out 0.2s; */
+    transition:2s ease-in 0.5s;  /*duration delay*/
+}
+#a:hover{
+    margin-top: 100px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 80px 80px 10px 20px rgb(104, 158, 24);
+    border: 1px solid black;
+}
+
+#b{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 71, 102);
+    margin: 0 auto;
+    margin: 0px;
+    transition :margin-top 2s ease-in-out 0.2s;
+}
+#b:hover{
+    margin-top: 390px;
+    background-color: rgb(163, 26, 48);
+}

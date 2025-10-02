@@ -1,0 +1,18 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: black;  /* shows grid container */
+    /* display: flex; in this case automatically it comes in a row as defaut
+    flex direction is row */
+    display: grid;
+    /* layout same (vertical in this case) but some space is created in 
+    between the items equally devide*/
+    /* purple lines we see in inspect is grid lines */
+}
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}

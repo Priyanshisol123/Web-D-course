@@ -1,0 +1,65 @@
+#container{
+    height: 600px;
+    width: 80%;
+    /* 80% of screen */
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    /* flex-wrap: wrap; */
+    /* align-items: baseline; */
+    align-content: flex-start;
+
+    flex-direction: column;
+}
+#org{
+    /* flex sizing -basis */
+    align-self: flex-start;
+    /* flex-basis:200px; */
+    /* direction is set using flex direction */
+    /* changes the width but if the font size is big so 
+    the size of item is adjusted to it so that will be min 
+    width*/
+    /* the width more than the size of the font can be 
+    anything as we waant it */
+
+    /* when flex direction is column the the height will be 200px */
+
+    /* flex sizing - grow */
+    /* flex-grow: 2; */
+    /* growth ko limit bhi kar sakte hain max width set karke */
+    /* max-width: 200px; */
+    /* isse extra space dusre groe item ko mil jayegi */
+
+    /* flex sizing - shrink */
+    flex-shrink: 1;    
+    /* factor 1 hai toh sabki width jab no wrap mein shrink hori hai toh equal hai */
+}
+#blue{
+    /* flex-basis: 350px; */
+    /* width will increase for row*/
+    /* height increase for column */
+
+    /* flex sizing - grow */
+    /* flex-grow: 3; */
+    /* jitni bhi space available hai usko ghar liya */
+    /* min-width: 900px; */
+    /* isse min width se hogi aur baki ki wrap hoga ya line ke bahar jayega
+    ya baki grow ko adjust hona padhega but max width aur min width change nahi honge */
+
+    /* flex sizing - shrink */
+    flex-shrink: 1;
+    /* agr=ar shrink 2 kare toh 2 times shrink hoga but font size limit karega chota hone ki size */
+}
+h1{
+    text-align: center;
+}
+#container div{
+    height: 500px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

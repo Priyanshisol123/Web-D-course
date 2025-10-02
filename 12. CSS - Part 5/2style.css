@@ -1,0 +1,54 @@
+#container{
+    height: 300px;
+    width: 80%;
+    /* 80% of screen */
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /* justify content
+    justify-content: flex-start; */
+    justify-content: flex-end;
+    /* Yahan jo bhi elements honge jo space occupy 
+    kar rahe hain woh main axis ke start mein chale 
+    jayenge , kyunki main axis left to right hai toh
+    start hoga left(left allignment)*/
+
+    /* direction-row mein start left hai toh left align
+    aur direction row reverse mein start right hai toh 
+    right align hoga */
+    /* Similarly column mein top to bottom hai toh
+     start top hoga aur column reverse mein bottom to top
+     hai toh start bottom hoga*/
+     /* jesa start wesa end just opposite */
+    justify-content: center;
+     /* centre ho jayega */
+
+    /* justify-content: space-between; */
+     /* Main axis ke along jitni bhi extra space hogi woh
+     sari space equally items ke beech mein aa jayegi agar
+     extra space nahi hai toh no diffrence */
+    justify-content: space-around;
+    /* ye extra space item ke all 2 directions(l/r) mein deta hai
+    matlab space between mein sir middle space aur space around
+    mein jo last aur first item honge unke outer side bhi space
+    hogi */
+    /* Toh mid mein space double hogi left aur right wali space se */
+    justify-content: space-evenly;
+    /* ye parent element ke start se end tak sabmein evenly space 
+    divide karta hai jese left of 1st item,mid of item,right of 
+    last item sab jaghe equal space divided hogi */
+}
+h1{
+    text-align: center;
+}
+#container div{
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
