@@ -1,13 +1,56 @@
 .container{
     width: 600px;
     height: 300px;
-    background-color: black;  
+    background-color: yellow;  
     display: grid;
+    
+    /* grid-template-rows: 80px 80px 80px 80px; */
+    /* This shows that 3 rows (trackes) will have 
+    distance of 100px between them */
+    /* ex 3 track=4 rows each track will contain 1 element*/
+    /* kya hoga agar grid mein ye tracks size cover kare toh 
+    thik phir agar bache hue tracks grid ke bahar jate hain toh
+    woh pass mein hi rahenge no distance. Wahin agar elements 
+    grid ke andar hi rahe toh equal distace mein divide ho jayenge */
+
+    /* grid-template-columns: 150px 150px 150px 150px 150px; */
+    /* Abb grid dikhne lagegi aur jitne 150px yahan define 
+    hai woh sab hi 1st row mein honge , baki next row mein 
+    honge . Iss taraha item ko cell wise place karenge*/
+    
+    /* grid-template-columns: auto; */
+    /* grid-template-rows: auto; */
+    /* isse automatically divide ho jayenge means single column*/
+
+    /* grid-template-columns: auto auto; */
+    /* Automatically 3 element divide ho jayenge in a row with 
+    equal space . jitne element define karenge utne element har row 
+    mein rahenge and grid lines inspect mein dekh sakte hain*/
+
+    /* Repeat */
+    grid-template-rows: repeat(5,1fr);
+    /* the same can be witten as */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    /* jitne element hai in count unme equal space divide hongi */
+    /* 3 row create hongi baki agar koi properti nahi hai toh
+    shelf jesi dikhegi and bachi hui baki space mein adjust ho 
+    jayegi also if ye kare toh  bhi baki assigned properties work
+    karengi like columns and width or height */
+    grid-template-columns: repeat(3,1fr);
+
+    /* jab rows and columns dono kare ek sath sirf tab grid us 
+    karna chahiye */
+
+
 }
 .item{
-    width: 100px;
-    height: 50px;
+    /* width: 100px;
+    height: 50px; */
+    /* Items height and width agar nahi set karte hain toh sare items 
+    har individual cell ko pura accupy kar legi */
     background-color: greenyellow;
     border: 2px solid black;
     text-align: center;
+
+    /* Repeat */
 }
