@@ -1,26 +1,30 @@
 .container{
     width: 600px;
     height: 300px;
-    background-color: azure;
+    background-color: yellow;
     display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-columns: auto auto auto;
-
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-column: 1fr 1fr 1fr 1fr; */
 
-    row-gap: 10px;
+    row-gap:10px;
+    /* current gap se ++ hi hoga means abhi grid ko hi dekhega
+    element ke gap ko nahi and current gap 0 hai toh + 10 no -ve
+    subtract nahi hoga ie gap kam nahi hogi current gap se*/
     column-gap: 30px;
+
+    /* short hand */
     grid-gap: 10px 30px;
+    /* jitni bar grid gap rewrite karenge past ka grip column ya row
+    gap dono overwrite hoga */
     grid-gap: 10px;
+    /* dono ke liye sath mein hoga yahan same */
 }
 .item{
     width: 100px;
-    height: 100px;
+    height: 50px;
+    /* Agar height and width hata dein toh it will be 
+    the same size as the grid cell therefore gaps grid ke 
+    beech mein hi nahi, it will also be in between the items */
     background-color: greenyellow;
     border: 2px solid black;
     text-align: center;
