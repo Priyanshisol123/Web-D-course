@@ -1,60 +1,31 @@
 .container{
+    /* grid set karne se act as a block always*/
     width: 600px;
     height: 300px;
-    background-color: azure;
-
-    display: grid;
-    /* display: inline-grid; */
-
-    grid-template-rows: 100px 100px 100px;
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-columns: auto auto auto;
-
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-column: 1fr 1fr 1fr 1fr; */
-
-    row-gap: 10px;
-    column-gap: 30px;
-    grid-gap: 10px 30px;
+    background-color: yellow;
+    display: inline-grid;/* grid- acts as a block */
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: repeat(3,1fr);
+    /* row- col- gap */
     grid-gap: 10px;
-/* 
-    justify-items: start;
-    justify-items: end; */
-
-    /* align-items: start;
-    align-items: end; */
-
-    justify-items: center;
-    align-items: center;
-
+    /* justify-items: center; ==> h0rizontal wise */
+    /* end or start of the assigned area all boxes*/
+    /* align-items: center;  ==> vertical length wise of each box or alll items */
     place-items: center;
+    /* both horizontal and vertical */
 }
 .item{
-    width: 100px;
-    height: 100px;
+    width: 100px;   
+    height: 50px;
     background-color: greenyellow;
     border: 2px solid black;
     text-align: center;
 }
 .one{
-    /* justify-self: end;
-    align-self: end; */
-    /* justify-items: center; */
+    /* justify-self: end; */
+    /* individual items ke liye */
+    /* align-self: start; */
 
-    place-self: start;
+    place-self: end;
+    /* individual vertical,horizontal both; */
 }
-/* .one{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-column: 1/4;
-    grid-column: 1/span 3;
-}
-.two{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-row: 1/3;
-    grid-row: 1/ span 2;
-} */
