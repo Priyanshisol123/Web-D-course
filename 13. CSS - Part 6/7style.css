@@ -3,35 +3,70 @@
     width: 300px;
     background-color: pink;
 
-    animation-name: fontAnimation;
-    /* animation-name: colorAnimation; */
+    /* animation-name: widthAnimate;
     animation-duration: 2s;
     animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 3;
-    animation-direction: normal;
+    transition-delay: 1s;
+    animation-iteration-count: infinite;     or infinite
+    animation-direction: alternate; */
+
+    /* animation short hand */
+    animation: colAnimate 3s ease-in 2s infinite alternate;
 }
-/* @keyframes widthAnimate{
+
+/* Font size pr animation - this only template and doesnt work alone*/
+@keyframes fontAnimation {
     from{
-        width: 10px
-    }
-    to{
-        width: 400px;
-    }
-} */
-@keyframes fnotAnimation{
-    from{
-        font: size 20px;
+        font-size: 20px;
     }
     to{
         font-size: 40px;
     }
 }
-/* @keyframes colorAnimate{
+
+@keyframes colorAnimate{
     from{
         background-color: green;
     }
     to{
         background-color: blue;
     }
-} */
+}
+@keyframes widthAnimate{
+    from{
+        width: 10px;
+        background-color: green;
+    }
+    to{
+        width: 400px;
+        background-color: blue;
+        border-radius: 15px;
+    }
+}
+/* %  in Animation to make several states in one animation */
+/* self made below */
+@keyframes colAnimate{
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: blue;
+    }
+    80%{
+        background-color: red;
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+@keyframes boxSizeAnimation {
+    from{
+        height: 100px;
+        width: 300px;
+    }
+    to{
+        height: 200px;
+        width: 400px;
+    }
+}
+ 

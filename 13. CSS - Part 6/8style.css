@@ -1,0 +1,60 @@
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+@media(width:400px){/* exactly */
+    h1{
+        background-color:red;
+        color: white;
+    }
+    div{
+        height:100px;
+        width: 100px;
+        background-color: blue;
+    }
+}
+@media(min-width:401px){/* exactly */
+    h1{
+        background-color:purple;
+        color: white;
+    }
+    div{
+        height:100px;
+        width: 100px;
+        background-color: yellowgreen;
+    }
+}
+@media(max-width:399px){/* exactly */
+    h1{
+        background-color:plum;
+        color: white;
+    }
+    div{
+        height:100px;
+        width: 100px;
+        background-color: hotpink;
+    }
+}
+/* range */
+@media(min-width:600px)and (max-width:800px){/* exactly */
+    h1{
+        background-color: olivedrab;
+        color: white;
+    }
+    div{
+        height:100px;
+        width: 100px;
+        background-color: orchid;
+    }
+}
+@media(orientation:landscape){/* exactly */
+    h1{
+        background-color: mediumslateblue;
+        color: brown;
+    }
+    div{
+        height:100px;
+        width: 100px;
+        background-color: mediumvioletred;
+    }
+}
