@@ -1,0 +1,207 @@
+*{
+    /* to get the clean slate */
+    margin: 0;
+    padding: 0;
+    /* set a particular font for out document */
+    font-family: "Iosevka Charon Mono", monospace;
+    font-weight: 400;
+}
+
+/* Main box */
+.main_box{
+    /* set the photo */
+    background: url(02UsedIn02.jpg);
+    /* set photo size adjust and give seize of complete page*/
+    /* vh meaning view port matlab jo area visible hai usko represent kartea hai vh */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* change button 1 */
+.btn_one i{
+    color: white;
+    /* increase size */
+    font-size: 30px;
+    /* bold */
+    font-weight: 700;
+    /* set position fixed relate to parent*/
+    position: absolute;
+    /* baki icon ke niche lika hue asre list items like shortcut sab uppaar shift ho jaynge cuz the shift is 16 and bigger ab=nd to the left and different from original is absolute */
+    left: 16px;
+    /* 2 text ke beech mein distance */
+    line-height: 60px;
+    /* ye btn 1 ke liye work hoga but agar 3 bar pr chiye toh button  pr ye aply kare toh hame pointer dikhega */
+    cursor: pointer;
+    /* smoothly move hona chahiye isiliye */
+    transition: all 0.3s linear;
+}
+
+/* side bar menu */
+.sidebar_menu{
+    /* relate to parent */
+    position: fixed;
+    /* shift to left of page which not visible */
+    left: -300px;
+    /* it should take the complete height to take it sid ebar from top to bottom */
+    height: 100vh;
+    width: 300px ;
+    /* set background for the side bar but we want a shade of white instead of coloring it*/
+    background-color: rgba(255,255,255,0.1);
+    /* pops the side bar */
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    /* smoothly sidebar menu ana jaye isiliye */
+    transition: all 0.3s linear;
+}
+
+/* style logo */
+.sidebar_menu .logo{
+    /* position set to parent*/
+    position: absolute;
+    /* complete width extent to sidebar width */
+    width: 100%;
+    /* cover the icon of bar and that are is considered where the name of logo put */
+    line-height: 60px;
+    /* pop out the side bar area with logo and icon */
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+    /* heigth hogi tabhi highlight hoga box shadow ka */
+    height: 60px;
+}
+
+/* likhe hue to style dena logo ke*/
+.sidebar_menu .logo a{
+    /* position  set to relative to parent */
+    position: absolute;
+    left: 50px;
+    /* color cnange of logo anchore tag */
+    color: white;
+    /* remove underline */
+    text-decoration: none;
+    /* increase size and bold*/
+    font-size: 20px;
+    font-weight: 500;
+    /* isse bhi nai aa jayega pointer 3 bar pr cus side bar wali layer is still there*/
+    cursor: pointer;
+}
+
+/* button 2 meaning X ke liye style set */
+.sidebar_menu .btn_two i{
+    color: gray;
+    /* button size and 2 line ke beech ki jage*/
+    font-size: 25px;
+    line-height: 60px;
+    /* this seen right on the left og the bar icon */
+    /* position relative to parent */
+    position: absolute;
+    left: 270px;
+    /* shifts the cross to the right and 270px away from left */
+    /* gayab karne ke liye  */
+    opacity: 0;
+    /* ye btn 2 ke liye work hoga but agar X pr chiye toh button ka icon"i" pr ye aply kare toh hame pointer dikhega */
+    cursor: pointer;
+    /* smoothly move hona chahiye isiliye */
+    transition: all 0.3s linear;
+}
+
+/* now menu where the content is */
+.sidebar_menu .menu{
+    /* relative to parent position */
+    position: absolute;
+    /* complete width extent to sidebar width */
+    width: 100%;
+    /* uppar se thoda niche dikhe
+    social media wala area upper chala gaya as ye to menu niche ho gaya and social media wala shift ho gaya upar jo jage khali hui wahan pr */
+    top: 80px;
+}
+
+.sidebar_menu .menu li{
+    /* adjust distance */
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu i,a{
+    /* icons,anchor tags display in white */
+    color: white;
+    /* underline remove and increase size */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    /* side bar icon and anchor tag ya naam ke beech mein space */
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media{
+    /* social media wala bar ye icons unka changes */
+    /* icons color */
+    color: white;
+    /* grayish or light white */
+    opacity: 0.5;
+    /* relative to parent set */
+    position: absolute;
+    /* shift from left (on the side bar only as the position is absolute meaning relative to parent and parent is side bar 
+    hence left 25% from the left of side bar width, like if position was fixed the it would be 25% from the left of whole screen)*/
+    left: 25%;
+    /* on bottom shift */
+    bottom: 20px;
+}
+
+/* .social_media icons */
+.sidebar_menu .social_media i{
+    /* icons color */
+    color: white;
+    /* grayish or light white */
+    opacity: 0.5;
+    /* aas pass jage icons ke honi chiye */
+    padding: 0 5px;
+}
+
+#check{
+    /* gayab karne ke liye check box ko and space reserved bhi hat jayegi sirf invisible nahi hoga*/
+    display: none;
+}
+
+/* Now basic css ho gay hai apna 
+Now we will set properties like hover and stuff */
+
+.sidebar_menu .menu li:hover{
+    /* items like shortcut, gallery jo side bar pr hai unko hover karne pr highlight hoga ki kese hoga */
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+.btn_one i:hover{
+    /* jo side bar ka button hai 3 bar wala usko hover pr size badha ho aur hightight ho */
+    font-size: 40px;
+    /* ye work nahi karta cuz of 2layer ke niche hai ye (side bar menu bhi hai uske niche hair btn1) */
+}
+
+.btn_two i:hover{
+    /* jo side bar ka button hai cross wala jiski opacity apan ne 0 kari hai*/
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    /* size increase of icons of social media*/
+    transform: scale(1.1);
+}
+
+/* chanhges with checked unchecked */
+/* ~ meaning selector siblings */
+#check:checked ~ .sidebar_menu{
+    /* siblings are button 1 side bar menu */
+    /* jab check ho tab box bahar aa jayega */
+    left: 0;
+}
+
+#check:checked ~ .btn_one i{
+    /* when sidebar is out the button is gone and vise versa */
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    /* x button dikhega */
+    opacity: 1;
+}
